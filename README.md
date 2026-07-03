@@ -130,11 +130,11 @@ npm run dev
 
 ### Coach Dashboard
 
-![Coach](screenshots/coach-dashboard.png)
+![Coach](screenshots/coachdashboard.png)
 
 ### Athlete Profile
 
-![Athlete](screenshots/athlete-profile.png)
+![Athlete](screenshots/athlete.png)
 
 ### AI Analysis
 
