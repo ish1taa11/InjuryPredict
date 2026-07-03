@@ -122,30 +122,6 @@ npm run dev
 
 ---
 
-## Screenshots
-
-### Home
-
-![Home](screenshots/home.png)
-
-### Coach Dashboard
-
-![Coach](screenshots/coachdashboard.png)
-
-### Athlete Profile
-
-![Athlete](screenshots/athlete.png)
-
-### AI Analysis
-
-![Analysis](screenshots/analysis.png)
-
-### Report
-
-![Report](screenshots/report.png)
-
----
-
 ## Roadmap
 
 - [ ] Supabase backend (replace localStorage)
