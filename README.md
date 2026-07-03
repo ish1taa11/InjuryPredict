@@ -1,6 +1,6 @@
 # InjuryPredict
 
-AI-powered athlete injury prevention platform for grassroots sports in India.
+AI-powered biomechanical screening platform for early injury risk detection in grassroots sports.
 
 🔗 **Live Demo:** https://injury-predict-taupe.vercel.app/
 
@@ -41,8 +41,51 @@ Built for India's 60 million student athletes who currently have zero access to 
 
 ---
 
-## AI Architecture
+
+## AI Pipeline
+
+The AI analysis follows a complete browser-side computer vision pipeline:
+
+1. Athlete uploads a movement video
+2. Video is split into multiple frames
+3. MediaPipe Pose detects 33 body landmarks
+4. Joint positions are analyzed across multiple frames
+5. Biomechanical asymmetries are calculated
+6. Injury risk is classified
+7. Personalized corrective exercises are generated
+8. Professional PDF report is created
+
+Everything runs directly inside the browser using WebAssembly.
+
 ---
+
+## AI Architecture
+
+Video Upload
+      │
+      ▼
+Frame Extraction
+      │
+      ▼
+MediaPipe Pose
+(33 Landmarks)
+      │
+      ▼
+Biomechanical Analysis
+ • Knee Asymmetry
+ • Shoulder Alignment
+ • Hip Alignment
+      │
+      ▼
+Risk Classification
+(Low / Moderate / High)
+      │
+      ▼
+Corrective Exercise Engine
+      │
+      ▼
+PDF Report + Dashboard Storage
+
 
 ## Biomechanical Thresholds
 
@@ -64,6 +107,42 @@ cd injurypredict
 npm install
 npm run dev
 ```
+
+---
+
+## Technical Challenges
+
+- Browser-side AI inference using MediaPipe Pose
+- Multi-frame pose analysis
+- Joint asymmetry calculations
+- Movement validation
+- Local athlete data persistence
+- PDF report generation
+- Coach & Athlete role management
+
+---
+
+## Screenshots
+
+### Home
+
+![Home](screenshots/home.png)
+
+### Coach Dashboard
+
+![Coach](screenshots/coach-dashboard.png)
+
+### Athlete Profile
+
+![Athlete](screenshots/athlete-profile.png)
+
+### AI Analysis
+
+![Analysis](screenshots/analysis.png)
+
+### Report
+
+![Report](screenshots/report.png)
 
 ---
 
